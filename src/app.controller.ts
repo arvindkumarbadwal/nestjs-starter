@@ -15,4 +15,9 @@ export class AppController {
   login(@Res() res: Response) {
     return res.render('admin/auth/login')
   }
+
+  @Get('dashboard')
+  dashboard(@Res() res: Response) {
+    return res.render('admin/dashboard/index')
+  }
 }
